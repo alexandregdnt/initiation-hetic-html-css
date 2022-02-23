@@ -1,0 +1,85 @@
+@import url('https://unpkg.com/reset-css@5.0.1/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+  --black: #1c1f2b;
+  --white: #f1f1f1;
+  --white-70: rgba(255, 255, 255, 0.7);
+}
+
+nav {
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  padding: 0 90px;
+  height: 100px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav h1 {
+  color: var(--white-70);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav ul a {
+  color: var(--white-70);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#home {
+  margin-top: 200px;
+  padding: 0 90px;
+}
+
+#home .home-bg {
+  position: absolute;
+  min-height: 600px;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--black);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0%, 100% 88%, 0% 100%);
+}
+
+#home .home-text h2 {
+  color: var(--white);
+  font-size: 112px;
+  font-weight: 900;
+  line-height: 1.2em;
+}
+
+#home .home-text p {
+  font-size: 24px;
+  line-height: 1.5em;
+  color: var(--white-70);
+}
+
+#home .home-content {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
