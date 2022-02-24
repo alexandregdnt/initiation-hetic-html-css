@@ -156,8 +156,15 @@ nav ul a:hover::after {
 
 .title {
   font-size: 48px;
-  color: var(--dark-blue);
   font-weight: bold;
+}
+
+.title-blue {
+  color: var(--dark-blue);
+}
+
+.title-white {
+  color: var(--white);
 }
 
 .text {
@@ -286,4 +293,27 @@ nav ul a:hover::after {
   height: 500px;
   max-width: 1000px;
   border: none;
+}
+
+#contact {
+  padding: 0 90px;
+  margin-bottom: 100px;
+}
+
+#contact .contact-container {
+  background: var(--black);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+#contact .contact-text {
+  max-width: 500px;
+}
+
+#contact .contact-email {
+  margin-top: 40px;
+}
+
+#contact .contact-email img {
+  width: 100px;
 }
