@@ -110,6 +110,10 @@ nav ul a:hover::after {
   top: 0;
 }
 
+#home .button {
+  margin-top: 50px;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -121,9 +125,17 @@ nav ul a:hover::after {
   gap: 20px;
   border: none;
   cursor: pointer;
-  color: var(--black);
-  margin-top: 50px;
   transition: gap 300ms ease;
+}
+
+.button-white {
+  color: var(--black);
+  background: var(--white);
+}
+
+.button-black {
+  color: var(--white);
+  background: var(--black);
 }
 
 .button:hover {
@@ -151,12 +163,15 @@ nav ul a:hover::after {
 .text {
   font-size: 24px;
   line-height: 1.5em;
-  color: var(--dark-blue-50);
   font-weight: 500;
 }
 
-#story .story-content p {
-  margin-top: 28px;
+.text-blue {
+  color: var(--dark-blue-50);
+}
+
+.text-white {
+  color: var(--white-70);
 }
 
 #story .story-content span {
@@ -177,10 +192,6 @@ nav ul a:hover::after {
   max-width: 400px;
 }
 
-#burgers .burgers-text .text {
-  margin-top: 28px;
-}
-
 #burgers .burger-images {
   display: flex;
   overflow-x: scroll;
@@ -199,4 +210,50 @@ nav ul a:hover::after {
 
 #burgers .scroll-indications img {
   width: 50px;
+}
+
+.paragraph {
+  margin-top: 28px;
+}
+
+#work {
+  padding: 0 90px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#work .work-text .button {
+  margin-top: 50px;
+}
+
+#work .work-text {
+  max-width: 500px;
+}
+
+#work .work-cards {
+  display: flex;
+  gap: 40px;
+}
+
+#work .work-card {
+  max-width: 320px;
+  background-color: var(--black);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#work .work-card h3 {
+  color: var(--white);
+  font-size: 32px;
+  line-height: 1.3em;
+  font-weight: 500;
+}
+
+#work .work-card p {
+  margin-top: 20px;
+}
+
+#work .work-card .button {
+  margin-top: 40px;
 }
