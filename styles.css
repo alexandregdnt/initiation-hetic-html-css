@@ -142,14 +142,13 @@ nav ul a:hover::after {
   max-width: 600px;
 }
 
-#story .story-content h2 {
+.title {
   font-size: 48px;
   color: var(--dark-blue);
   font-weight: bold;
 }
 
-#story .story-content p,
-#story .story-content span {
+.text {
   font-size: 24px;
   line-height: 1.5em;
   color: var(--dark-blue-50);
@@ -164,4 +163,40 @@ nav ul a:hover::after {
   margin-top: 20px;
   text-align: right;
   display: block;
+}
+
+#burgers {
+  padding: 0 0 0 90px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 100px;
+  position: relative;
+}
+
+#burgers .burgers-text {
+  max-width: 400px;
+}
+
+#burgers .burgers-text .text {
+  margin-top: 28px;
+}
+
+#burgers .burger-images {
+  display: flex;
+  overflow-x: scroll;
+  gap: 40px;
+}
+
+#burgers .scroll-indications {
+  background-image: linear-gradient(to right, transparent, #000000cc);
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+#burgers .scroll-indications img {
+  width: 50px;
 }
