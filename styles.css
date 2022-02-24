@@ -18,7 +18,7 @@ button {
   --dark-blue-50: rgba(62, 72, 104, 0.5);
 }
 
-nav {
+body > nav {
   display: flex;
   top: 0;
   justify-content: space-between;
@@ -32,19 +32,19 @@ nav {
   background-color: var(--black);
 }
 
-nav h1 {
+body > nav h1 {
   color: var(--white-70);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 48px;
 }
 
-nav ul {
+body > nav ul {
   display: flex;
   gap: 40px;
 }
 
-nav ul a {
+body > nav ul a {
   color: var(--white-70);
   text-decoration: none;
   font-size: 20px;
@@ -59,10 +59,17 @@ nav ul a::after {
   height: 3px;
   left: 0;
   bottom: -2px;
-  background-color: var(--white-70);
   transform: scaleX(0);
   transition: transform 300ms ease;
   transform-origin: right;
+}
+
+body > nav ul a::after {
+  background-color: var(--white-70);
+}
+
+footer > nav ul a::after {
+  background-color: var(--dark-blue);
 }
 
 nav ul a:hover::after {
@@ -312,8 +319,44 @@ nav ul a:hover::after {
 
 #contact .contact-email {
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 #contact .contact-email img {
   width: 100px;
+}
+
+#contact .contact-email a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 90px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  text-decoration: none;
+  position: relative;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
