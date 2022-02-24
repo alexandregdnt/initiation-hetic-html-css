@@ -223,6 +223,16 @@ nav ul a:hover::after {
   justify-content: space-between;
 }
 
+#work .work-text {
+  position: relative;
+}
+
+#work .work-text > img {
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+}
+
 #work .work-text .button {
   margin-top: 50px;
 }
@@ -256,4 +266,24 @@ nav ul a:hover::after {
 
 #work .work-card .button {
   margin-top: 40px;
+}
+
+#restaurants {
+  padding: 0 90px;
+  margin-bottom: 100px;
+  gap: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#restaurants .restaurants-text {
+  max-width: 500px;
+}
+
+#restaurants iframe {
+  border-radius: 8px;
+  width: 100%;
+  height: 500px;
+  max-width: 1000px;
+  border: none;
 }
